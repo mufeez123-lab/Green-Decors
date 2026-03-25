@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactPage from "./pages/Contact";
 import AboutPage from "./pages/About"
+import SmoothScroll from './components/gsap';
+import Cursor from './components/Cursor';
 
 // Helper: Scroll to top on every route change
 const ScrollToTop = () => {
@@ -18,9 +20,11 @@ const ScrollToTop = () => {
 
 function App() {
   return (
+    <SmoothScroll>
     <Router>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
+        <Cursor />
         <Navbar />
         
         <main className="flex-grow">
@@ -36,6 +40,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </SmoothScroll>
   );
 }
 
