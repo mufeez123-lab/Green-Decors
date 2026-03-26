@@ -9,6 +9,7 @@ import AboutPage from "./pages/About"
 import SmoothScroll from './components/gsap';
 import Cursor from './components/Cursor';
 import WhatsAppButton from './components/Whatsapp';
+import ScrollProgress from "./components/ScrollProgress";
 
 // Helper: Scroll to top on every route change
 const ScrollToTop = () => {
@@ -25,6 +26,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
+          <ScrollProgress /> 
         <Cursor />
         <Navbar />
         

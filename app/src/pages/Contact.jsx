@@ -137,7 +137,7 @@ const ProjectsPage = () => {
                 whileTap={{ scale: 0.99 }}
                 className="w-full bg-emerald-950 text-white py-5 uppercase text-[11px] tracking-[0.3em] font-bold hover:bg-emerald-900 transition shadow-xl"
               >
-                Send Inquiry
+                Send Enquiry
               </motion.button>
             </form>
           </motion.div>

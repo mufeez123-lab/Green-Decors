@@ -52,7 +52,7 @@ const Hero = () => {
                 <span className="relative z-10 uppercase tracking-widest text-[10px] md:text-xs font-bold group-hover:text-stone-900 transition-colors duration-300">
                   Discuss Project
                 </span>
-                <div className="absolute inset-0 bg-emerald-400 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                <div className="absolute inset-0 bg-[#96ba8c] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
               </button>
               
               <div className="text-[10px] uppercase tracking-widest text-stone-400 font-bold">

@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const aboutElements = [
-  { id: 1, x: "12%", y: "15%", w: "320px", type: "image", content: "https://images.unsplash.com/photo-1581578731522-745d05ad9a2d?q=80&w=800", label: "The Design Studio" },
+  { id: 1, x: "12%", y: "15%", w: "320px", type: "image", content: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=800", label: "The Design Studio" },
   { id: 2, x: "55%", y: "8%", w: "400px", type: "text", title: "The Vision", desc: "Founded in 2015, we set out to prove that luxury doesn't have to cost the earth. We bridge the gap between high-end architecture and raw nature." },
   { id: 3, x: "70%", y: "45%", w: "300px", type: "image", content: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=800", label: "Biophilic Craft" },
   { id: 4, x: "10%", y: "60%", w: "380px", type: "quote", content: "Design is not just what it looks like; it's how it breathes.", author: "Founding Director" },
@@ -206,13 +206,12 @@ const AboutPage = () => {
                 <textarea rows="4" placeholder="How can we help transform your space?" className="border-b border-stone-200 py-3 focus:border-emerald-800 outline-none transition resize-none text-sm bg-transparent"></textarea>
               </div>
               <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }} className="w-full bg-emerald-950 text-white py-5 uppercase text-[11px] tracking-[0.3em] font-bold shadow-xl">
-                Send Inquiry
+                Send Enquiry
               </motion.button>
             </form>
           </motion.div>
         </div>
       </section>
-      <Footer />
     </div>
     </HelmetProvider>
   );

@@ -52,9 +52,11 @@ const Projects = () => {
           <h2 className="text-4xl font-serif">Recent Works</h2>
           <p className="text-gray-500 mt-2 text-lg italic">Our signature designs in motion</p>
         </div>
-        <div className="hidden md:block text-emerald-900 font-semibold border-b-2 border-emerald-900 pb-1 cursor-pointer hover:text-emerald-700 transition">
+       <a href="/projects">
+         <div className="hidden md:block text-emerald-900 font-semibold border-b-2 border-emerald-900 pb-1 cursor-pointer hover:text-emerald-700 transition">
           View All Projects
         </div>
+       </a>
       </div>
 
       <motion.div 
