@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className={`
         flex items-center justify-between transition-all duration-500 pointer-events-auto
         ${isScrolled 
-          ? 'mt-6 w-[92%] md:w-[85%] max-w-6xl rounded-full bg-[#005e44] backdrop-blur-xl px-6 py-3 shadow-2xl' 
+          ? 'mt-6 w-[92%] md:w-[85%] max-w-6xl rounded-full bg-gray-100 backdrop-blur-xl px-6 py-3 shadow-2xl' 
           : 'mt-0 w-full px-8 md:px-16 py-8 bg-transparent'
         }
       `}>
@@ -56,14 +56,14 @@ const Navbar = () => {
                 key={link.name} 
                 to={link.href} 
                 className={`relative px-5 py-2 text-[10px] uppercase tracking-[0.25em] font-semibold transition-all duration-300
-                  ${isScrolled ? 'text-stone-300 hover:text-white' : 'text-stone-600 hover:text-emerald-900'}
+                  ${isScrolled ? 'text-stone-600 hover:text-emerald-800' : 'text-stone-600 hover:text-emerald-900'}
                 `}
               >
                 {link.name}
                 {isActive && (
                   <motion.div 
                     layoutId="navUnderline"
-                    className={`absolute bottom-1 left-5 right-5 h-[1.5px] ${isScrolled ? 'bg-emerald-400' : 'bg-emerald-800'}`}
+                    className={`absolute bottom-1 left-5 right-5 h-[1.5px] ${isScrolled ? 'bg-emerald-800' : 'bg-emerald-800'}`}
                   />
                 )}
               </Link>
@@ -76,10 +76,10 @@ const Navbar = () => {
           <motion.a
             href="/profile.pdf"
             target="_blank"
-            className={`hidden md:flex items-center space-x-2 px-5 py-2.5 rounded-full text-[9px] uppercase tracking-widest font-bold border transition-all
+            className={`hidden md:flex items-center space-x-2 px-5 py-2.5 rounded-full text-[9px] uppercase tracking-widest font-bold  transition-all
               ${isScrolled 
-                ? 'bg-[#96ba8c] border-emerald-900 text-white' 
-                : 'bg-emerald-950 border-emerald-900 text-white hover:bg-emerald-800'
+                ? 'bg-[#96ba8c]  text-white' 
+                : 'bg-emerald-950  text-white hover:bg-emerald-800'
               }
             `}
           >
@@ -91,7 +91,7 @@ const Navbar = () => {
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`p-2 transition-all duration-500 z-[120] relative rounded-full ${
-              isMobileMenuOpen ? 'text-white bg-white/10' : isScrolled ? 'text-white' : 'text-stone-900'
+              isMobileMenuOpen ? 'text-white bg-white/10' : isScrolled ? 'text-stone-700' : 'text-stone-900'
             } md:hidden`}
           >
             {isMobileMenuOpen ? <X size={28} strokeWidth={1.5} /> : <Menu size={28} strokeWidth={1.5} />}

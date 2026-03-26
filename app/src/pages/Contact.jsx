@@ -23,7 +23,7 @@ const ProjectsPage = () => {
             alt="Luxury Interior Background" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/40 to-stone-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-stone-900/40 to-stone-50"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto">

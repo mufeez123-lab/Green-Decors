@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 const allProjects = [
   { id: 1, title: 'The Emerald Villa', category: 'Residential', img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1000' },
   { id: 2, title: 'Organic Workspace', category: 'Commercial', img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000' },
-  { id: 3, title: 'Sage Kitchen', category: 'Kitchen', img: 'https://images.unsplash.com/photo-1556912177-c54030639a6d?q=80&w=1000' },
+  { id: 3, title: 'Sage Kitchen', category: 'Kitchen', img: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1000' },
   { id: 4, title: 'Urban Jungle Loft', category: 'Residential', img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000' },
   { id: 5, title: 'Biophilic Cafe', category: 'Commercial', img: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000' },
   { id: 6, title: 'Minimalist Pantry', category: 'Kitchen', img: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1000' },
@@ -39,7 +39,7 @@ const ProjectsPage = () => {
       className="w-full h-full object-cover"
     />
     {/* Dark/Green Gradient Overlay for readability */}
-    <div className="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/40 to-stone-50"></div>
+    <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-stone-900/40 to-stone-50"></div>
   </div>
 
   {/* Content (Z-index ensures text is above image) */}
@@ -71,7 +71,7 @@ const ProjectsPage = () => {
 </header>
 
       {/* Filter Bar */}
-      <div className="flex justify-center space-x-6 md:space-x-12 mb-16 px-8">
+      <div className="flex justify-center space-x-6 md:space-x-12 mb-16 px-8 py-6">
         {categories.map((cat) => (
           <button
             key={cat}
