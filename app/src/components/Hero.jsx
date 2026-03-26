@@ -96,7 +96,7 @@ const Hero = () => {
           <motion.div 
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -right-2 md:-right-4 bottom-16 md:bottom-20 bg-emerald-900 text-white p-4 md:p-8 z-40 hidden sm:block shadow-xl"
+            className="absolute -right-2 md:-right-4 bottom-16 md:bottom-20 bg-[#96ba8c] text-white p-4 md:p-8 z-40 hidden sm:block shadow-xl"
           >
             <p className="text-xl md:text-3xl font-serif italic">100%</p>
             <p className="text-[8px] md:text-[10px] uppercase tracking-widest opacity-70">Organic Materials</p>

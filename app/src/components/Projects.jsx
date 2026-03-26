@@ -4,7 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 const projects = [
   { id: 1, title: 'The Emerald Villa', category: 'Residential', img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800' },
   { id: 2, title: 'Organic Workspace', category: 'Commercial', img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800' },
-  { id: 3, title: 'Sage Kitchen', category: 'Kitchen', img: 'https://images.unsplash.com/photo-1556912177-c54030639a6d?auto=format&fit=crop&q=80&w=800' },
+  { id: 3, title: 'Sage Kitchen', category: 'Kitchen', img: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&q=80&w=800' },
   { id: 4, title: 'Nordic Living', category: 'Residential', img: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800' },
   { id: 5, title: 'Azure Lounge', category: 'Commercial', img: 'https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&q=80&w=800' },
   { id: 6, title: 'Green Oasis', category: 'Residential', img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800' },

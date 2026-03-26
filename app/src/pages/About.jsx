@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const aboutElements = [
   { id: 1, x: "12%", y: "15%", w: "320px", type: "image", content: "https://images.unsplash.com/photo-1581578731522-745d05ad9a2d?q=80&w=800", label: "The Design Studio" },
@@ -42,6 +43,12 @@ const AboutPage = () => {
   };
 
   return (
+    <HelmetProvider>
+      <Helmet>
+          <title>About Us | Green Decors</title>
+          <meta name="description" content="This is a dynamic description for SEO!" />
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
     <div className="bg-stone-50 min-h-screen selection:bg-emerald-100 text-stone-900">
       <Navbar />
 
@@ -159,16 +166,16 @@ const AboutPage = () => {
               <div className="space-y-4">
                 <h3 className="font-serif text-2xl text-stone-800 border-b border-stone-200 pb-2">Direct Inquiries</h3>
                 <div className="flex items-center space-x-3 text-stone-500 hover:text-emerald-800 transition">
-                  <Mail size={18} className="text-emerald-700" /> <span className="text-sm">hello@greendecors.in</span>
+                  <Mail size={18} className="text-emerald-700" /> <span className="text-sm">info@greendecors.in</span>
                 </div>
                 <div className="flex items-center space-x-3 text-stone-500 hover:text-emerald-800 transition">
-                  <Phone size={18} className="text-emerald-700" /> <span className="text-sm">+91 98XXX XXXXX</span>
+                  <Phone size={18} className="text-emerald-700" /> <span className="text-sm">+91 70900 38818</span>
                 </div>
               </div>
               <div className="space-y-4">
                 <h3 className="font-serif text-2xl text-stone-800 border-b border-stone-200 pb-2">Visit the Studio</h3>
                 <div className="flex items-start space-x-3 text-stone-500 text-sm">
-                  <MapPin size={18} className="mt-1 flex-shrink-0 text-emerald-700" /> <span>102, Green Avenue, Indiranagar, <br />Bangalore - 560038</span>
+                  <MapPin size={18} className="mt-1 flex-shrink-0 text-emerald-700" /> <span>Nehrunagar, Puttur, Karnataka <br /></span>
                 </div>
               </div>
             </div>
@@ -207,6 +214,7 @@ const AboutPage = () => {
       </section>
       <Footer />
     </div>
+    </HelmetProvider>
   );
 };
 

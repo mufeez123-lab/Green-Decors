@@ -11,18 +11,19 @@ const Footer = () => (
       <div>
         <h4 className="text-white font-medium mb-6">Quick Links</h4>
         <ul className="space-y-4 text-sm text-emerald-200/60">
-          <li className="hover:text-white transition cursor-pointer">Our Portfolio</li>
-          <li className="hover:text-white transition cursor-pointer">Design Process</li>
-          <li className="hover:text-white transition cursor-pointer">Sustainability</li>
+          <li className="hover:text-white transition cursor-pointer"><a href="/about">About Us</a></li>
+          <li className="hover:text-white transition cursor-pointer"><a href="/projects">Projects</a></li>
+          <li className="hover:text-white transition cursor-pointer"><a href="/contact">Contact Us</a></li>
+     
         </ul>
       </div>
 
       <div>
         <h4 className="text-white font-medium mb-6">Contact</h4>
         <ul className="space-y-4 text-sm text-emerald-200/60">
-          <li>hello@greendecors.india</li>
-          <li>+91 98XXX XXXXX</li>
-          <li>Mumbai | Bangalore | Delhi</li>
+          <li>info@greendecors.india</li>
+          <li>+91 70900 38818</li>
+          <li>Mangalore | Bangalore | Puttur</li>
         </ul>
       </div>
 

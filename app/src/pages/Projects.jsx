@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const allProjects = [
   { id: 1, title: 'The Emerald Villa', category: 'Residential', img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1000' },
   { id: 2, title: 'Organic Workspace', category: 'Commercial', img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000' },
@@ -22,6 +20,12 @@ const ProjectsPage = () => {
     : allProjects.filter(p => p.category === filter);
 
   return (
+      <HelmetProvider>
+      <Helmet>
+          <title>Projects | Green Decors</title>
+          <meta name="description" content="This is a dynamic description for SEO!" />
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
     <div className="bg-stone-50 min-h-screen">
 
       
@@ -122,6 +126,7 @@ const ProjectsPage = () => {
       </motion.div>
 
     </div>
+         </HelmetProvider>
   );
 };
 

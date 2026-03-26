@@ -2,9 +2,16 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const ProjectsPage = () => {
   return (
+      <HelmetProvider>
+      <Helmet>
+          <title>Contact Us | Green Decors</title>
+          <meta name="description" content="This is a dynamic description for SEO!" />
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
     <div className="bg-stone-50 min-h-screen">
       <Navbar />
       
@@ -76,7 +83,7 @@ const ProjectsPage = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-stone-500 hover:text-emerald-800 transition cursor-pointer">
                   <Phone size={18} className="text-emerald-700" />
-                  <span className="text-sm">+91 98XXX XXXXX</span>
+                  <span className="text-sm">+91 70900 38818</span>
                 </div>
               </div>
 
@@ -140,6 +147,7 @@ const ProjectsPage = () => {
 
 
     </div>
+      </HelmetProvider>
   );
 };
 

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Leaf, Home, Layout, PenTool, ArrowRight } from 'lucide-react';
+import {Link} from 'react-router-dom'
 
 const services = [
   { 
@@ -65,10 +66,10 @@ const Services = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1, duration: 0.8 }}
-            className={`relative group flex flex-col ${s.align === 'end' ? 'md:mt-24' : ''}`}
+            className={`relative group flex bg-[#96ba8c] rounded-[70px] p-10 flex-col ${s.align === 'end' ? 'md:mt-24' : ''}`}
           >
             {/* Background Number Watermark */}
-            <span className="absolute -top-12 -left-6 text-8xl font-serif text-stone-200/60 pointer-events-none group-hover:text-emerald-100 transition-colors duration-500">
+            <span className="absolute -top-12 -left-6 text-8xl font-serif text-stone-400/60 pointer-events-none group-hover:text-emerald-100 transition-colors duration-500">
               {s.id}
             </span>
 
@@ -81,14 +82,15 @@ const Services = () => (
                 {s.title}
               </h4>
               
-              <p className="text-stone-500 leading-relaxed mb-8 max-w-sm">
+              <p className="text-stone-200 leading-relaxed mb-8 max-w-sm">
                 {s.desc}
               </p>
 
+           <Link to="/about">
               <button className="flex items-center space-x-3 text-[10px] uppercase tracking-[0.2em] font-bold text-emerald-900 group-hover:space-x-5 transition-all">
                 <span>Learn More</span>
                 <ArrowRight size={14} />
-              </button>
+              </button></Link>
             </div>
 
             {/* Subtle decorative line */}

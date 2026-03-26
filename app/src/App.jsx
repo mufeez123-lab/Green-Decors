@@ -8,6 +8,7 @@ import ContactPage from "./pages/Contact";
 import AboutPage from "./pages/About"
 import SmoothScroll from './components/gsap';
 import Cursor from './components/Cursor';
+import WhatsAppButton from './components/Whatsapp';
 
 // Helper: Scroll to top on every route change
 const ScrollToTop = () => {
@@ -38,6 +39,7 @@ function App() {
         </main>
 
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
     </SmoothScroll>
